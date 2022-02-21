@@ -2,13 +2,13 @@ const tileDisplay = document.querySelector(".tile-container");
 const keyboard = document.querySelector(".key-container");
 const messageDisplay = document.querySelector(".message-container");
 
-let wordle;
+let wordle = "WORDL";
 
 const getWordle = _ =>{
     fetch("http://localhost:8000/word")
     .then(response => response.json())
     .then(json => {
-        console.log(json);
+        //console.log(json);
         wordle = json.toUpperCase();
     })
     .catch(err => console.log(err));
@@ -98,7 +98,7 @@ const handleClick = (letter) => {
         return;
     }
 
-    console.log("clicked ", letter);
+    //console.log("clicked ", letter);
     addLetter(letter);
 };
 
@@ -113,7 +113,7 @@ const addLetter = (letter) => {
         guessRows[currentRow][currentTile] = letter;
         tile.setAttribute("data", letter);
 
-        console.log("guessRows", guessRows);
+        //console.log("guessRows", guessRows);
         currentTile++;
     }
 };
@@ -152,7 +152,7 @@ const checkRow = (_) => {
             }
         }
     }
-    console.log("ct ", currentTile, " cr ", currentRow);
+    //console.log("ct ", currentTile, " cr ", currentRow);
 };
 
 const showMessage = (message) => {
