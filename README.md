@@ -4,8 +4,8 @@
 - Node.js
 - Express.js
 - axios
-- nodemon
 - Rapid API  [Random Words](https://rapidapi.com/sheharyar566/api/random-words5/)
+- nodemon
 
 ## Quick Installation
 ```
