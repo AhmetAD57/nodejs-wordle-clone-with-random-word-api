@@ -11,12 +11,11 @@
 ```
 npm install
 ```
-> ⚠️ Before runing the project add your API key  in ```.env ``` file.
- 
-## Run Project
 
-### Run for api
+## Run Project
+⚠️ Before runing the project add your API key  in ```.env``` file.
+
 ```
 npm start
 ```
-After that run ```index.html ``` any browser.
+After that run ```index.html ``` on web browser.
